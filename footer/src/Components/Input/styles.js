@@ -16,6 +16,7 @@ export const InputContainer = styled.div`
 export const TextField = styled.div`
     width: 12.8rem;
     height: 3rem;
+    margin-bottom: 15px;
 
     textarea {
         width: 12.8rem;
