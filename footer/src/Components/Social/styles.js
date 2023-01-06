@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SocialContainer = styled.div`
-    margin-top: 90px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;

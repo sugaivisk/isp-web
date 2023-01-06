@@ -6,12 +6,51 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    min-height: 600px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: 768px) {
+        min-height: 400px;
+}
+`
+
+export const ContainerGrid = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+}
+`
+
+export const ContainerGrid1 = styled.div`
+    @media only screen and (min-width: 768px) {
+        grid-column-start: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+`
+
+export const ContainerGrid2 = styled.div`
+    @media only screen and (min-width: 768px) {
+        grid-column-start: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
 `
 
 export const Title = styled.h1`
@@ -19,7 +58,7 @@ export const Title = styled.h1`
     font-weight: 900;
     font-size: 1.75rem;
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 `
 
 export const Text = styled.p`
