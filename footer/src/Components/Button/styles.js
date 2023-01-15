@@ -9,22 +9,25 @@ export const ButtonContainer = styled.div`
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         margin-top: 1.125rem;
-        height: 1.5rem;
-        width: 6.25rem;
+        height: 24px;
+        width: 100px;
         color:#FFFFFF;
         background: linear-gradient(180deg, #FE904C 0%, #FF7017 100%);
         border-radius: 3.5px;
         box-shadow: 0px 1.36px 1.36px 0px #000000 15%;
 
-        transition: .3s ease-in-out;
+        transition: all .4s ease-in-out;
         cursor: pointer;
 
         &:hover {
-            opacity: 0.8;
+            opacity: .7;
         }
 
-        &:active {
-            opacity: 0.6;
-        }
+        @media (min-width: 1200px) {
+        width: 150px;
+        height: 35px;
+        box-shadow: 0px 2.05px 2.05px 0px #00000026;
+
+    }
 }
 `

@@ -20,6 +20,9 @@ const Social = () => {
                     <i class="fab fa-instagram"></i>
                 </SocialIcons>
                 <SocialIcons href="#" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </SocialIcons>
+                <SocialIcons href="#" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                 </SocialIcons>
             </SocialContainer>

@@ -1,19 +1,49 @@
 import styled from 'styled-components'
 
-export const Maps = styled.div`
-    margin: 20px 0; 
-    width: auto;
-    height: 6.25rem;
+export const MapContainer = styled.div`
+    width: 230px;
+    margin: 20px auto 0px auto;
 
-    iframe {
-        border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+`
+
+export const Maps = styled.div`
+    margin-top: 30px;
+    margin-bottom: 10px; 
+    width: 230px;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+        width: 390px;
     }
 
-    p {
-        margin-top: 5px;
-        font-size: 0.65rem;
+    iframe {
+        width: 230px;
+        border: 0;
 
-        display: flex;
-        justify-content: flex-start;
+        @media (min-width: 1200px) {
+        width: 390px;
+    }
+    }
+`
+
+export const MapText = styled.div`
+    width: 230px;
+    height: 96px;
+    font-size: 10.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+        width: 390px;
+        font-size: 16px;
+        margin-top: 10px;
     }
 `

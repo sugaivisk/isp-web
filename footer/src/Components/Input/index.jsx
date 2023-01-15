@@ -1,25 +1,34 @@
 import { InputContainer, TextField, ErrorText, LabelText } from "./styles";
+import { Controller } from 'react-hook-form'
 
-const Input = ({type}) => {
+const Input = ({type, name, errorMessage, control, ...rest}) => {
     return(
         <>
             <InputContainer>
                 <LabelText>{type}</LabelText>
-                <input />
+                <Controller
+                        name={name}
+                        control={control}
+                        render={({ field: {value, onChange} }) => (<input value={value} onChange={onChange} {...rest} />)}
+                />
             </InputContainer>
-            <ErrorText />
+            {errorMessage ? <ErrorText>{errorMessage}</ErrorText> : null}
         </>
     )
 }
 
-const TextArea = ({type}) => {
+const TextArea = ({type, name, errorMessage, control, ...rest}) => {
     return (
         <>
             <TextField>
                 <LabelText>{type}</LabelText>
-                <textarea></textarea>
+                <Controller
+                        name={name}
+                        control={control}
+                        render={({ field: {value, onChange} }) => (<textarea value={value} onChange={onChange} {...rest} />)}
+                />
             </TextField>
-            <ErrorText />
+            {errorMessage ? <ErrorText>{errorMessage}</ErrorText> : null}
         </>
     )
 }

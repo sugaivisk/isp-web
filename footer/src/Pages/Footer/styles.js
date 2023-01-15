@@ -6,8 +6,7 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    min-height: 600px;
-    height: 100vh;
+    min-height: 680px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +15,12 @@ export const Container = styled.div`
     overflow: hidden;
 
     @media only screen and (min-width: 768px) {
-        min-height: 400px;
-}
+        height: 340px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        height: 570px;
+    }
 `
 
 export const ContainerGrid = styled.div`
@@ -26,10 +29,10 @@ export const ContainerGrid = styled.div`
     align-items: center;
     flex-direction: column;
 
-    @media only screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 40px;
+        column-gap: 100px;
 }
 `
 
@@ -53,22 +56,43 @@ export const ContainerGrid2 = styled.div`
 }
 `
 
-export const Title = styled.h1`
+export const TitleWhite = styled.h1`
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 28px;
     color: #FFFFFF;
     margin-bottom: 15px;
+
+    @media (min-width: 992px) {
+        font-size: 36px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 42px;
+    }
 `
 
 export const Text = styled.p`
-    font-size: 0.9rem;
+    font-size: 16px;
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 10px;
+
+    @media (min-width: 1200px) {
+        font-size: 24px;
+    }
 `
 
 export const FooterText = styled.p`
-    font-size: 0.5rem;
+    font-size: 8px;
     position: absolute;
     bottom: 12px;
+
+    @media (min-width: 992px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 18px;
+    }
+    
 `
