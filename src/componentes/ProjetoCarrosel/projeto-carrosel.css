@@ -14,11 +14,10 @@
     margin-bottom: 80px;
 }
 
-.projetos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.projetos-celular {
+    display: none;
 }
+
 
 @media only screen and (max-width:834px) {
     .carrosel {
@@ -39,7 +38,14 @@
         margin-bottom: 45px;
     }
 
-    .projetos {
+    .projetos-tela {
+        display: none;
+    }
+
+    .projetos-celular {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
         flex-direction: column;  
     }
 }
