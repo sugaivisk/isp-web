@@ -1,4 +1,3 @@
-import maos from '../../imagens/maos.png'
 import './juntesecao.css'
 
 export default function JunteSecao() {
@@ -9,10 +8,9 @@ export default function JunteSecao() {
                 <div className='junte-texto'>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel est tortor. Ut eget nulla vel lorem convallis semper et eu ante.</p>
                     <button>DOE AGORA</button>
-                </div>
-                
+                </div>                
             </div>
-            <img src={maos} alt="mãos unidas" className='maos'></img>
+            <div className='maos'></div>            
         </section>
     )
 }

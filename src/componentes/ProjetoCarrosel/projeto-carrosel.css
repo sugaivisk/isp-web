@@ -1,5 +1,6 @@
 .carrosel {
-    padding: 50px 150px;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .carrosel-titulo {
@@ -17,4 +18,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width:834px) {
+    .carrosel {
+        width: 100%;        
+    }
+
+    .carrosel-titulo {
+        font-size: 36px;
+        line-height: 64px;
+        margin-bottom: 55px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .carrosel-titulo {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 45px;
+    }
+
+    .projetos {
+        flex-direction: column;  
+    }
 }
