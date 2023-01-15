@@ -3,6 +3,7 @@
     background: #FBFBFB;
     border: 1px solid #FE6C05;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .projeto:first-of-type {
@@ -66,11 +67,15 @@
     }
     
     .projeto:first-of-type {
-        margin-right: 20px;
+        margin-right: 5px;
     }
     
     .projeto-img {        
         width: 306px;        
+    }
+
+    .projeto div {
+        padding: 0 20px; 
     }
     
     .projeto h3 {
@@ -104,14 +109,10 @@
     }
     
     .projeto-img {        
-        width: 293px;
+        max-width: 293px;
         margin: 5px auto 20px;
     }
 
-    .projeto div {
-        padding: 0 20px;        
-    }
-    
     .projeto h3 {
         line-height: 22px;    
         margin-bottom: 25px;    
