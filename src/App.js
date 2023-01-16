@@ -1,11 +1,11 @@
-import JunteSecao from './componentes/JunteSecao';
-import ProjetoCarrosel from './componentes/ProjetoCarrosel';
+import JunteANos from './componentes/JunteANos';
+import Projetos from './componentes/Projetos';
 
 function App() {
   return (
     <div className="App">   
-      <JunteSecao /> 
-      <ProjetoCarrosel />  
+      <JunteANos /> 
+      <Projetos />  
     </div>
   );
 }
