@@ -1,6 +1,6 @@
-import './juntesecao.css'
+import './junteANos.css'
 
-export default function JunteSecao() {
+export default function JunteANos() {
     return (
         <section className='junte-secao'>
             <div className='junte-conteudo'>
