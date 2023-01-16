@@ -5,7 +5,7 @@
     position: absolute;    
     left: 50%;
     z-index: 2;
-    transform: translate(-50%, -44%);
+    transform: translate(-50%, -40%);
     color: black;
     padding: 25px 70px;
 
@@ -46,6 +46,7 @@
     color: #FFFFFF;
     padding: 10px 45px;
     border: none;
+    cursor: pointer;
 }
 
 .modal-imagem img {
@@ -74,4 +75,35 @@
     font-size: 33px;
     color: black;    
     text-align: center;
+}
+
+@media only screen and (max-width:834px) {
+    .modal{
+        width: 360px;
+        transform: translate(-50%, -39%);
+    }
+
+    .modal-header {
+        display: block;        
+    }
+
+    .modal-titulo {
+        width: 100%;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+    }
+}
+    
+
+@media only screen and (max-width:360px) {
+    .modal{
+        width: 260px;
+        transform: translate(-50%, -30%);
+    }
+
+    .modal-content p {
+        font-size: 10px;
+    }
 }

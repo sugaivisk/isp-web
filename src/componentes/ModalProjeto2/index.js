@@ -1,5 +1,5 @@
 import './modal.css'
-import projeto1 from '../../imagens/projeto1-1.png'
+import projeto2 from '../../imagens/projeto2-1.png'
 
 export default function Modal (props) { 
     
@@ -8,12 +8,12 @@ export default function Modal (props) {
     return(
         <div className={`${className} modal`}>
             <div className='modal-header'>
-                <h3 className='modal-titulo'>Projeto construindo o futuro</h3>
+                <h3 className='modal-titulo'>Programa conecta geração jovem</h3>
                 <button className='modal-doacao'>DOE AGORA</button>
             </div>
 
             <div className='modal-imagem'>
-                <img src={projeto1} alt='crinças brincando'></img>
+                <img src={projeto2} alt='crinças brincando'></img>
             </div>
 
             <div className='modal-content'>
