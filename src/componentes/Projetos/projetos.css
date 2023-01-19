@@ -26,14 +26,6 @@
     cursor: pointer;
 }
 
-.show{
-    display: block !important;
-}
-
-.projeto:first-of-type {
-    margin-right: 30px;
-}
-
 .projeto-img {
     display: block;
     width: 512px;
@@ -41,7 +33,7 @@
 }
 
 .projeto div {
-    padding: 0 50px;
+    padding: 0 7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +59,7 @@
     text-align: center;
     color: #000000;
     margin-bottom: 50px;
+    padding: 0 7px;
 }
 
 .projeto button {
@@ -83,6 +76,14 @@
     border: none;
     margin-bottom: 80px;
     padding: 5px 15px;
+}
+
+.show{
+    display: block !important;
+}
+
+.projeto:first-of-type {
+    margin-right: 30px;
 }
 
 .projetos-celular {
