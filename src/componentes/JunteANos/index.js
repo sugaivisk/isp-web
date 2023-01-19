@@ -6,7 +6,7 @@ export default function JunteANos() {
             <div className='junte-conteudo'>
                 <span>JUNTE-SE A NÓS</span>
                 <div className='junte-texto'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel est tortor. Ut eget nulla vel lorem convallis semper et eu ante.</p>
+                    <p>Você pode fazer doações únicas ou da forma que preferir para a Instituição Sociedade Plural. Clique no botão abaixo e saiba mais!</p>
                     <button>DOE AGORA</button>
                 </div>                
             </div>

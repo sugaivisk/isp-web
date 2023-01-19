@@ -17,9 +17,11 @@ export default function Modal (props) {
             </div>
 
             <div className='modal-content'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus sed orci quis facilisis. Donec pulvinar eros a risus iaculis, eget dapibus diam rutrum. Morbi feugiat turpis et elit mollis, ut maximus urna hendrerit. Aenean quis sodales felis. Quisque quam purus, sodales eget rhoncus nec, porta vel diam. Nulla ultricies, velit at convallis ornare, diam tellus iaculis metus, non accumsan est est id nisl. Pellentesque eget dui vitae erat mattis elementum. Morbi et neque nisl.</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus sed orci quis facilisis. Donec pulvinar eros a risus iaculis, eget dapibus diam rutrum. Morbi feugiat turpis et elit mollis, ut maximus urna hendrerit. Aenean quis sodales felis. Quisque quam purus, sodales eget rhoncus nec, porta vel diam. Nulla ultricies, velit at convallis ornare, diam tellus iaculis metus, non accumsan est est id nisl. Pellentesque eget dui vitae erat mattis elementum. Morbi et neque nisl.</p>
+                <p>Dando continuidade ao projeto Construindo o Futuro, neste focamos em preparar adolescentes e jovens, entre 16 e 24 anos, para o mercado de trabalho.</p>
+                <p>Buscamos meios de implementar espaços de convivência para a participação, formação e desenvolvimento da cidadania, bem como o estímulo ao protagonismo e autonomia dos jovens.</p>
+                <p>Oferecemos aulas de inglês, cursos de liderança, tecnologia e inovação. </p>
+                <p> Os participantes ainda têm a vivência do mercado de trabalho com workshops sobre elaboração de currículos, entrevistas de emprego e educação financeira.</p>
+                <p>Também há debates sobre temas relevantes na formação do cidadão para que ele participe de maneira efetiva e seja capaz de transformar o meio ao qual pertence. </p>
             </div>
 
             <div className='botao-fechar' onClick={funcaoEsconder}></div>
