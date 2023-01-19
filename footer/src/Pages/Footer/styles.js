@@ -15,11 +15,11 @@ export const Container = styled.div`
     overflow: hidden;
 
     @media only screen and (min-width: 768px) {
-        height: 340px;
+        min-height: 340px;
     }
 
     @media only screen and (min-width: 1200px) {
-        height: 570px;
+        min-height: 600px;
     }
 `
 
@@ -33,7 +33,11 @@ export const ContainerGrid = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 100px;
-}
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
 `
 
 export const ContainerGrid1 = styled.div`
@@ -43,7 +47,7 @@ export const ContainerGrid1 = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-}
+    }
 `
 
 export const ContainerGrid2 = styled.div`
@@ -53,7 +57,7 @@ export const ContainerGrid2 = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-}
+    }
 `
 
 export const TitleWhite = styled.h1`

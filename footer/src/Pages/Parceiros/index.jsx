@@ -5,12 +5,11 @@ import DoceBaccana from '../../Assets/image8.png'
 import CristinaImplantista from '../../Assets/image9.png'
 import FbTalentos from '../../Assets/image10.png'
 import TabernaculoEducacional from '../../Assets/image11.png'
-import Imagem12 from '../../Assets/image12.png'
 import Kledirauto from '../../Assets/image13.png'
 import ReageInforma from '../../Assets/image14.png'
 import DefendoriaPublica from '../../Assets/image15.png'
 
-const images = [DoceBaccana, CristinaImplantista, FbTalentos, TabernaculoEducacional, Imagem12, Kledirauto, ReageInforma, DefendoriaPublica]
+const images = [DoceBaccana, CristinaImplantista, FbTalentos, TabernaculoEducacional, Kledirauto, ReageInforma, DefendoriaPublica]
 
 
 const Parceiros = () => {
