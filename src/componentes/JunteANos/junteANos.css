@@ -1,8 +1,9 @@
 .junte-secao {    
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    width: 1440px;
-    margin: 0 auto;
+    
 }
 
 .junte-conteudo {

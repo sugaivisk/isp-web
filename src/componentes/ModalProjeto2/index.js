@@ -1,4 +1,3 @@
-import './modal.css'
 import projeto2 from '../../imagens/projeto2-1.png'
 
 export default function Modal (props) { 

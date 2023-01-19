@@ -6,6 +6,7 @@ import dados from '../../dadosDosProjetos'
 //importa CSS
 import './projetos.css'
 import './navigation.css'
+import './modal.css'
 
 //importa imagens
 import imagemprojeto1 from '../../imagens/projeto1-0.png'
@@ -56,7 +57,7 @@ export default function Projetos() {
                     <SwiperSlide>
                         <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[0].id}`)}}>
                             <img src={imagemprojeto1} alt='projeto1-Construindo o futuro' className='projeto-img'/>
-                            <div>
+                            <div className='projeto-conteudo'>
                                 <h3>{dados[0].titulo}</h3>
                                 <p>{dados[0].texto}</p>
                                 <button>DOE AGORA</button>  
@@ -64,13 +65,31 @@ export default function Projetos() {
                         </div>      
                         <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[1].id}`)}}>
                             <img src={imagemprojeto2} alt='projeto2-Conecta geração jovem' className='projeto-img'/>
-                            <div>
+                            <div className='projeto-conteudo'> 
                                 <h3>{dados[1].titulo}</h3>
                                 <p>{dados[1].texto}</p>
                                 <button>DOE AGORA</button>  
                             </div>
                         </div>                
-                    </SwiperSlide>                    
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[0].id}`)}}>
+                            <img src={imagemprojeto1} alt='projeto1-Construindo o futuro' className='projeto-img'/>
+                            <div className='projeto-conteudo'>
+                                <h3>{dados[0].titulo}</h3>
+                                <p>{dados[0].texto}</p>
+                                <button>DOE AGORA</button>  
+                            </div>
+                        </div>      
+                        <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[1].id}`)}}>
+                            <img src={imagemprojeto2} alt='projeto2-Conecta geração jovem' className='projeto-img'/>
+                            <div className='projeto-conteudo'> 
+                                <h3>{dados[1].titulo}</h3>
+                                <p>{dados[1].texto}</p>
+                                <button>DOE AGORA</button>  
+                            </div>
+                        </div>                
+                    </SwiperSlide>    
                 </Swiper>
             </div>
             
@@ -79,7 +98,7 @@ export default function Projetos() {
             <div className='projetos-celular'>               
                 <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[0].id}`)}}>
                     <img src={imagemprojeto1} alt='projeto1-Construindo o futuro' className='projeto-img'/>
-                    <div>
+                    <div className='projeto-conteudo'>
                         <h3>{dados[0].titulo}</h3>
                         <p>{dados[0].texto}</p>
                         <button>DOE AGORA</button>  
@@ -87,7 +106,7 @@ export default function Projetos() {
                 </div>      
                 <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[1].id}`)}}>
                     <img src={imagemprojeto2} alt='projeto2-Conecta geração jovem' className='projeto-img'/>
-                    <div>
+                    <div className='projeto-conteudo'>
                         <h3>{dados[1].titulo}</h3>
                         <p>{dados[1].texto}</p>
                         <button>DOE AGORA</button>  

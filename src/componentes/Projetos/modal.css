@@ -5,7 +5,7 @@
     position: absolute;    
     left: 50%;
     z-index: 2;
-    transform: translate(-50%, -44%);
+    transform: translate(-50%, 0%);
     color: black;
     padding: 25px 70px;
 
@@ -78,14 +78,15 @@
 
 @media only screen and (max-width:834px) {
     .modal{
-        width: 360px;
-        transform: translate(-50%, -50%);
+        width: 100%;        
     }
-}
-    
 
-@media only screen and (max-width:360px) {
-    .modal{
-        width: 260px;
+    .modal-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-titulo {
+        width: 100%;
     }
 }

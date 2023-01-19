@@ -38,6 +38,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;    
 }
 
 .projeto h3 {
@@ -48,18 +56,6 @@
     line-height: 38px;
     text-align: center;
     color: #FD8419;
-}
-
-.projeto p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 50px;
-    padding: 0 7px;
 }
 
 .projeto button {
@@ -86,6 +82,11 @@
     margin-right: 30px;
 }
 
+.projetos-tela {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .projetos-celular {
     display: none;
 }
@@ -103,7 +104,7 @@
     }
 
     .projeto {
-        max-width: 318px;        
+        max-width: 50%;        
     }
     
     .projeto:first-of-type {
