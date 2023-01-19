@@ -1,10 +1,17 @@
+import { useState } from 'react'
+
+//importa dados dos projetos
+import dados from '../../dadosDosProjetos'
+
+//importa CSS
 import './projetos.css'
 import './navigation.css'
 
+//importa imagens
 import imagemprojeto1 from '../../imagens/projeto1-0.png'
 import imagemprojeto2 from '../../imagens/projeto2-0.png'
 
-import { useState } from 'react'
+//importa modal
 import ModalProjeto1 from '../ModalProjeto1'
 import ModalProjeto2 from '../ModalProjeto2'
 
@@ -32,6 +39,7 @@ export default function Projetos() {
     }
 
     return (
+        
         <section className='carrosel'>            
             <h2 className='carrosel-titulo'>Projetos</h2>
 
@@ -46,22 +54,22 @@ export default function Projetos() {
             <div className='projetos-tela'>
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                     <SwiperSlide>
-                        <div className='projeto' onClick={()=> {mostrarModal(); setProjeto("projeto1")}}>
+                        <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[0].id}`)}}>
                             <img src={imagemprojeto1} alt='projeto1-Construindo o futuro' className='projeto-img'/>
                             <div>
-                                <h3>Construindo o futuro</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel est tortor. Ut eget nulla vel lorem convallis semper et eu ante.</p>
+                                <h3>{dados[0].titulo}</h3>
+                                <p>{dados[0].texto}</p>
                                 <button>DOE AGORA</button>  
                             </div>
                         </div>      
-                        <div className='projeto' onClick={()=> {mostrarModal(); setProjeto("projeto2")}}>
+                        <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[1].id}`)}}>
                             <img src={imagemprojeto2} alt='projeto2-Conecta geração jovem' className='projeto-img'/>
                             <div>
-                                <h3>Conecta geração jovem</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel est tortor. Ut eget nulla vel lorem convallis semper et eu ante.</p>
+                                <h3>{dados[1].titulo}</h3>
+                                <p>{dados[1].texto}</p>
                                 <button>DOE AGORA</button>  
                             </div>
-                        </div>                                                            
+                        </div>                
                     </SwiperSlide>                    
                 </Swiper>
             </div>
@@ -69,22 +77,22 @@ export default function Projetos() {
 
             {/* Celular */}
             <div className='projetos-celular'>               
-                <div className='projeto' onClick={()=> {mostrarModal(); setProjeto("projeto1")}}>
+                <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[0].id}`)}}>
                     <img src={imagemprojeto1} alt='projeto1-Construindo o futuro' className='projeto-img'/>
                     <div>
-                        <h3>Construindo o futuro</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel est tortor. Ut eget nulla vel lorem convallis semper et eu ante.</p>
+                        <h3>{dados[0].titulo}</h3>
+                        <p>{dados[0].texto}</p>
                         <button>DOE AGORA</button>  
                     </div>
                 </div>      
-                <div className='projeto' onClick={()=> {mostrarModal(); setProjeto("projeto2")}}>
+                <div className='projeto' onClick={()=> {mostrarModal(); setProjeto(`projeto${dados[1].id}`)}}>
                     <img src={imagemprojeto2} alt='projeto2-Conecta geração jovem' className='projeto-img'/>
                     <div>
-                        <h3>Conecta geração jovem</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel est tortor. Ut eget nulla vel lorem convallis semper et eu ante.</p>
+                        <h3>{dados[1].titulo}</h3>
+                        <p>{dados[1].texto}</p>
                         <button>DOE AGORA</button>  
                     </div>
-                </div>                
+                </div>            
             </div>  
 
         </section>
