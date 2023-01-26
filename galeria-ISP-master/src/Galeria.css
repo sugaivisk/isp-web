@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Raleway:wght@100&display=swap');
+
+.texth2{
+    width: 1360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2-text {
+    width: 177px;
+    height: 69px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 69px;
+    color: #FE6C05;
+}
+
+.container-galeria{
+    margin: 77px 99px 66px 128px;
+}
+
+.swiper img{
+    width: 270.24px;
+    height: 541.74px;
+    object-fit: cover;
+    border-radius: 5px;
+}
